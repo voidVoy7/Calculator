@@ -14,10 +14,10 @@ class Program
 
         while (true)
         {
-            Console.WriteLine("Choose the operation: (+, -, *, /)");
+            Console.WriteLine("Choose the operation: (+, -, *, /, %)");
             op = Convert.ToChar(Console.ReadLine());
 
-            if (op == '+' || op == '-' || op == '*' || op == '/')
+            if (op == '+' || op == '-' || op == '*' || op == '/' || op == '%')
             {
                 break;
             }
@@ -44,6 +44,10 @@ class Program
             case '/':
                 var DivideResult = a / b;
                 Console.WriteLine("The result of divide your two numbers is: " + DivideResult);
+                break;
+            case '%':
+                var ModulusResult = a % b;
+                Console.WriteLine("The modulus of your two numbers is: " + ModulusResult);
                 break;
         }
     }
